@@ -1,0 +1,56 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.img-bg{
+  background-image: url("bg.jpg");
+  filter: blur(2.5px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-bg{
+  background-color: rgba(0,0,0, 0.3);
+  color: white;
+  font-weight: bold;
+  font-family: "Teko", sans-serif;
+  position: absolute;
+  top: 30%;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  font-size: 3vw;
+}
+
+.text-bg:hover{
+  background-color: rgba(0,0,0, 0.5);
+}
+
+.nav {
+  display: inline-table;
+  padding-right: 20px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+@keyframes cursor-blink {
+  0%{
+    opacity: 0;
+  }
+}
+
+h2::after{
+  display: inline-block;
+  background: green;
+  content: "";
+  width: 3%;
+  height: 3px;
+  animation: cursor-blink 1.5s
+  steps(2) infinite;
+}

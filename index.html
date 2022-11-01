@@ -1,1 +1,98 @@
-<h1>Hello My Name is Alan Xu</h1>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>"About Alan Xu"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/master.css">
+    <style>
+      body, html {
+        height: 100%;
+        margin: 0;
+      }
+
+      .img-bg{
+        background-image: url("bg.jpg");
+        filter: blur(2.5px);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .text-bg{
+        background-color: rgba(0,0,0, 0.3);
+        color: white;
+        font-weight: bold;
+        font-family: "Teko", sans-serif;
+        position: absolute;
+        top: 15%;
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+        font-size: 3vw;
+        z-index: 2;
+      }
+
+      .img-self{
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        padding: 10px;
+        text-align: right;
+        z-index: 1;
+      }
+
+      .text-bg:hover{
+        background-color: rgba(0,0,0, 0.5);
+      }
+
+      .nav {
+        display: inline-table;
+        padding-right: 20px;
+      }
+
+      a{
+        color: white;
+        text-decoration: none;
+      }
+
+      @keyframes cursor-blink {
+        0%{
+          opacity: 0;
+        }
+      }
+
+      h2::after{
+        display: inline-block;
+        background: green;
+        content: "";
+        width: 3%;
+        height: 3px;
+        animation: cursor-blink 1.5s
+        steps(2) infinite;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="img-bg"></div>
+    <div class="text-bg">
+      <h1>Hi! My name is Alan Xu</h1>
+      <h2>Welcome to my page </h2>
+      <div class="nav">
+          <ul>
+            <li class="nav"><a href="experience.html">Experience</a></li>
+            <li class="nav"><a href="#">Link</a></li>
+            <li class="nav"><a href="#">Link</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="img-self">
+      <img src="home_self.jpg" alt="Alan Xu Home">
+    </div>
+
+  </body>
+</html>

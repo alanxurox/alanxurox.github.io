@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>"Alan Xu Experience"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/master.css">
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+        }
+
+        .img-bg{
+          background-image: url("bg.jpg");
+          filter: blur(2.5px);
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .img-self{
+          position: absolute;
+          top: 30%;
+          width: 100%;
+          padding: 10px;
+          text-align: right;
+          z-index: 1;
+        }
+
+        .text-bg{
+          background-color: rgba(0,0,0, 0.3);
+          color: white;
+          font-weight: bold;
+          font-family: "Teko", sans-serif;
+          position: absolute;
+          top: 30%;
+          width: 80%;
+          padding: 20px;
+          text-align: center;
+          font-size: 3vw;
+          z-index: 2;
+        }
+
+        .text-bg:hover{
+          background-color: rgba(0,0,0, 0.5);
+        }
+
+        .nav {
+          display: inline-table;
+          padding-right: 20px;
+          font-size: 10px;
+        }
+
+        a{
+          color: white;
+          text-decoration: none;
+        }
+
+        @keyframes cursor-blink {
+          0%{
+            opacity: 0;
+          }
+        }
+
+      </style>
+  </head>
+  <body>
+    <div class="img-bg"></div>
+    <div class="text-bg">
+      <div class="nav">
+          <ul>
+            <li class="nav"><a href="index.html">Home</a></li>
+            <li class="nav"><a href="#">Link</a></li>
+            <li class="nav"><a href="#">Link</a></li>
+          </ul>
+      </div>
+      <h1>Yuanlun (Alan) Xu</h1>
+      <h2>Beijing, China</h2>
+      <h3>Education</h3>
+      <ul class="nav">
+        <li>Babson College</li>
+      </ul>
+      <h3>Favorite Course</h3>
+      <ul class="nav">
+        <li>Technology and Business Innovation</li>
+      </ul>
+      <h3>Skills</h3>
+      <ul class="nav">
+        <li>Tableau and Database</li>
+      </ul>
+      <h3><a href="Yuanlun_Alan_Xu_Resume.pdf">View Resume</a></h3>
+    </div>
+    <div class="img-self">
+      <img src="experience_self.jpg" alt="Alan Xu Home">
+    </div>
+  </body>
+</html>
