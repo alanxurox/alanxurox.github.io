@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="google-site-verification" content="y6ZFZ8HnIPsAqb4ayZNtvVwix7S1jH8oVP4HIXdHBCM" />
-    <title>"Alan Xu Experience"</title>
+    <title>"About Alan Xu | Experience"</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -12,12 +12,14 @@
         body, html {
           height: 100%;
           margin: 0;
+          position: relative;
         }
 
         .img-bg{
-          background-image: url("bg.jpg");
+          background: url("bg.jpg") repeat fixed;
           filter: blur(2.5px);
           height: 100%;
+          background-attachment: fixed;
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -25,25 +27,34 @@
 
         .img-self{
           position: absolute;
-          top: 30%;
-          width: 100%;
-          padding: 10px;
+          top: 0%;
+          left: 25%;
+          height: auto;
+          max-width: 100%;
+          max-height: 100%;
+          padding: 0px;
           text-align: right;
           z-index: 1;
+          transform: translate(0%, -25%);
         }
 
         .text-bg{
-          background-color: rgba(0,0,0, 0.3);
+          position: absolute;
+          padding: 40px;
+          background-color: rgba(0, 0, 0, 0.3);
           color: white;
           font-weight: bold;
           font-family: "Teko", sans-serif;
           position: absolute;
-          top: 30%;
-          width: 80%;
-          padding: 20px;
+          top: 50%;
+          left: 50%;
+          max-width: 100%;
+          max-height: 100%;
           text-align: center;
-          font-size: 3vw;
+          font-size: 2vw;
           z-index: 2;
+          transform: translate(-50%, -50%);
+
         }
 
         .text-bg:hover{
@@ -69,6 +80,14 @@
 
       </style>
   </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DRD7ZHG79S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DRD7ZHG79S');
+</script>
   <body>
     <div class="img-bg"></div>
     <div class="text-bg">
@@ -96,7 +115,7 @@
       <h3><a href="Yuanlun_Alan_Xu_Resume.pdf">View Resume</a></h3>
     </div>
     <div class="img-self">
-      <img src="experience_self.jpg" alt="Alan Xu Home">
+      <img src="alan-xu-europe.jpg" alt="Alan Xu Traveling in Europe">
     </div>
   </body>
 </html>
