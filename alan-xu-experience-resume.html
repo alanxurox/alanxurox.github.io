@@ -12,6 +12,8 @@
     <meta charset="utf-8">
     <meta name="google-site-verification" content="y6ZFZ8HnIPsAqb4ayZNtvVwix7S1jH8oVP4HIXdHBCM" />
     <title>"About Alan Xu | Experience"</title>
+    <meta name="description" content= "Yuanlun Alan Xu, class '24 babson college student with Technology Entrepreneurship and Business Analytics Concentration: Experience and Resume">
+    <meta name="keywords" content="Alan Xu, Alan Xu Babson College, Alan Xu Babson Student, Alan Xu Tech entrepreneurship, Alan Xu Student Business Analytics, Babson Tech entrepreneurship">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -34,21 +36,17 @@
         }
 
         .img-self{
-          position: absolute;
-          top: 0%;
-          left: 25%;
-          height: auto;
-          max-width: 100%;
-          max-height: 100%;
-          padding: 0px;
-          text-align: right;
-          z-index: 1;
-          transform: translate(0%, -25%);
+            display: block;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .text-bg{
           position: absolute;
-          padding: 40px;
+          padding-left: 100px;
+          padding-right: 100px;
+          padding: 100px;
           background-color: rgba(0, 0, 0, 0.3);
           color: white;
           font-weight: bold;
@@ -59,10 +57,11 @@
           max-width: 100%;
           max-height: 100%;
           text-align: center;
-          font-size: 2vw;
+          font-size:calc(12px + 1vw);
           z-index: 2;
           transform: translate(-50%, -50%);
-
+          overflow: auto;
+          column-count: 2
         }
 
         .text-bg:hover{
@@ -72,18 +71,21 @@
         .nav {
           display: inline-table;
           padding-right: 20px;
-          font-size: 10px;
+          font-size:calc(10px + 0.5vw);
+        }
+
+        a:hover{
+          color: rgba(0,0,0, 0.5);
         }
 
         a{
           color: white;
-          text-decoration: none;
+          text-decoration:underline;
+          font-size:calc(10px + 1vw);
         }
 
-        @keyframes cursor-blink {
-          0%{
-            opacity: 0;
-          }
+        li {
+          text-align: left;
         }
 
       </style>
@@ -95,28 +97,37 @@
       <div class="nav">
           <ul>
             <li class="nav"><a href="index.html">Home</a></li>
-            <li class="nav"><a href="#">Link</a></li>
-            <li class="nav"><a href="#">Link</a></li>
           </ul>
       </div>
-      <h1>Yuanlun (Alan) Xu</h1>
+      <h1>Yuanlun (Alan) Xu Experiences</h1>
       <h2>Beijing, China</h2>
+      <div class="img-self">
+        <img src="alan-xu-europe.jpg" alt="Alan Xu Traveling in Europe">
+      </div>
       <h3>Education</h3>
       <ul class="nav">
-        <li>Babson College</li>
+        <li>Babson College Student '24</li>
+        <li>Technology Entrepreneurship<br> & Business Analytics</li>
       </ul>
       <h3>Favorite Course</h3>
       <ul class="nav">
         <li>Technology and Business Innovation</li>
+        <li>Modeling with Excel</li>
+        <li>And More!</li>
       </ul>
       <h3>Skills</h3>
       <ul class="nav">
-        <li>Tableau and Database</li>
+        <li>Tableau, Database, Excel and More!</li>
       </ul>
-      <h3><a href="Yuanlun_Alan_Xu_Resume.pdf">View Resume</a></h3>
+      <h3><a href="Yuanlun_Alan_Xu_Resume.pdf">For More View Resume</a></h3>
     </div>
-    <div class="img-self">
-      <img src="alan-xu-europe.jpg" alt="Alan Xu Traveling in Europe">
-    </div>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRD7ZHG79S"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DRD7ZHG79S');
+    </script>
   </body>
 </html>

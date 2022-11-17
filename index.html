@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRD7ZHG79S"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-DRD7ZHG79S');
-    </script>
     <meta charset="utf-8">
     <meta name="google-site-verification" content="y6ZFZ8HnIPsAqb4ayZNtvVwix7S1jH8oVP4HIXdHBCM" />
     <meta name="description" content= "Alan Xu, Babson College '24 technology entrepreneurship and business analytics student from China, loves pc building, exploring new gadgets, and traveling!">
-    <meta name="keywords" content="Alan Xu, Alan Xu my page, Alan Xu Experience, Alan Xu Traveling">
+    <meta name="keywords" content="Alan Xu, Alan Xu Babson College, Alan Xu Babson Student, Alan Xu Tech entrepreneurship, Alan Xu Student Business Analytics, Babson Tech entrepreneurship">
     <title>"About Alan Xu | Homepage"</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +27,8 @@
       }
 
       .text-bg{
+        column-count: 2;
+        display: block;
         background-color: rgba(0,0,0, 0.3);
         color: white;
         font-weight: bold;
@@ -43,18 +37,23 @@
         top: 15%;
         width: 80%;
         padding: 20px;
+        padding-bottom: 75px;
         text-align: center;
-        font-size: 2vw;
+        font-size:calc(12px + 1.25vw);
         z-index: 2;
+        max-height: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        oveerflow-y: auto;
+        min-width: 20%;
+        min-height: 20%;
       }
 
       .img-self{
-        position: absolute;
-        top: 30%;
-        width: 100%;
-        padding: 10px;
-        text-align: right;
-        z-index: 1;
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       .text-bg:hover{
@@ -64,11 +63,17 @@
       .nav {
         display: inline-table;
         padding-right: 20px;
+        font-size:calc(10px + 0.5vw);
+      }
+
+      a:hover{
+        color: rgba(0,0,0, 0.5);
       }
 
       a{
         color: white;
-        text-decoration: none;
+        text-decoration: underline;
+        font-size:calc(10px + 1vw);
       }
 
       @keyframes cursor-blink {
@@ -91,20 +96,33 @@
   </head>
   <body>
     <div class="img-bg"></div>
-    <div class="text-bg">
-      <h1>Hi! My name is Alan Xu</h1>
-      <h2>Welcome to my page </h2>
-      <div class="nav">
-          <ul>
-            <li class="nav"><a href="alan-xu-experience-resume.html">Experience</a></li>
-            <li class="nav"><a href="#">Link</a></li>
-            <li class="nav"><a href="#">Link</a></li>
-          </ul>
+
+
+    </div>
+    <div title="Alan Xu, Babson College '24 technology entrepreneurship and business analytics student from China, loves pc building, exploring new gadgets, and traveling!">
+      <div class="text-bg">
+        <h1>I'm Alan, Tech Student from Babson College</h1>
+        <h2>Welcome to my page </h2>
+        <div class="nav">
+            <ul>
+              <li class="nav"><a href="alan-xu-experience-resume.html">Experience</a></li>
+            </ul>
+        </div>
+        <div class="img-self">
+          <img src="alan-xu-traveling.jpg" alt="Alan Xu Traveling">
+        </div>
       </div>
     </div>
-    <div class="img-self">
-      <img src="alan-xu-traveling.jpg" alt="Alan Xu Traveling">
-    </div>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6376755e07a9f7ab"></script>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRD7ZHG79S"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DRD7ZHG79S');
+    </script>
   </body>
 </html>
